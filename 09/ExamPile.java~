@@ -1,0 +1,23 @@
+package Week09;
+import java.util.*;
+public interface examPile {
+	//take an array and change into arraylist?
+	/*Initialises the pile of exams to consist of
+	the contents of the array provided (the elements of the array represent the
+    exams in order from top to bottom of the pile). The internal representation
+	of the pile need not be as an array.*/
+	public void load(List<Integer> items);
+	//Returns the value at the top of the pile.
+	public int peek();
+	//Returns the number of exams remaining in the pile.
+	public int size();
+	//Returns the given value from the top
+	//section of the pile, as specified by depth, and removes it from the pile. Returns
+	//-1 if the value is not found.
+	public int mark(int depth, int value);
+	//Moves count values from the top of the pile to the bottom of the pile.
+	public void delay(int count);
+	
+	//need EmptyPileException for this interface --see lecture
+
+}

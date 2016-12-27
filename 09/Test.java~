@@ -1,0 +1,17 @@
+package week09;
+
+import java.util.*;
+
+public class Test {
+  
+  public static void main(String[] args) {
+    List<Integer> testArray = Arrays.asList(1,8,6,9,0,3,2,7,5,4);
+    EP testing = new EP();
+    testing.load(testArray);
+    System.out.println(testArray);
+    System.out.println(testing.isEmpty());
+    System.out.println(testing.peek());
+    System.out.println(testing.sortingSteps(11));
+  }
+  
+}
